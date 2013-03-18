@@ -8,6 +8,7 @@ package just.editor.system
 	import just.editor.node.UIstateNode;
 	import just.editor.view.ComponentView;
 	import just.editor.view.Menu;
+	import just.editor.view.PropertiesPanel;
 	import just.editor.view.TestView;
 	
 	import net.richardlord.ash.core.Game;
@@ -49,6 +50,7 @@ package just.editor.system
 			uicreator.creatUI(0,0,uistate,Menu);
 			uicreator.creatUI(150,150,uistate,TestView);
 			uicreator.creatUI(0,30,uistate,ComponentView);
+			uicreator.creatUI(0,230,uistate,PropertiesPanel);
 //			uicreator.createButton(500,500,null);
 			
 //			uicreator.creatTextUi(50,50,uistate)

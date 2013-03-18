@@ -26,7 +26,13 @@ package just.editor.main
 	
 	public class Main extends Sprite
 	{
+		/**
+		 *自带ui区 
+		 */		
 		private var uicontainer:Sprite;
+		/**
+		 *编辑区 
+		 */		
 		private var editorcontainer:Sprite;
 		public function Main()
 		{

@@ -90,6 +90,11 @@ package just.editor.system
 					break;
 				}
 			}
+			//处理 选择的控件
+			if(displayobj==mousePoll.clickTarget&&!display.isUi)
+			{
+				mousePoll.currentCompent=displayobj
+			}
 //			var motion : Motion = node.motion;
 
 //			if ( keyPoll.isDown( control.left ) )

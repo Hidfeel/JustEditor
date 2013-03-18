@@ -19,12 +19,12 @@ package just.editor.system
 		private var file:FileManager;
 		public function EditorSystem(creator:EntityCreator,container:Sprite,file:FileManager)
 		{
-			super(EditorNode);
+			super(EditorNode,updateNode);
 			this.container=container;
 			this.creator=creator;
 			this.file=file;
 		}
-		override public function update( time : Number ) : void
+		private function updateNode( node : EditorNode, time : Number ) : void
 		{
 			for( var node : EditorNode = nodeList.head; node; node = node.next )
 			{

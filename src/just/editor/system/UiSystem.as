@@ -6,6 +6,7 @@ package just.editor.system
 	import just.editor.view.ComponentView;
 	import just.editor.view.ListMenu;
 	import just.editor.view.Menu;
+	import just.editor.view.PropertiesPanel;
 	import just.editor.view.TestView;
 	
 	import net.richardlord.ash.core.Game;
@@ -77,6 +78,10 @@ package just.editor.system
 					creator.creatDragItem(cls,uistate);
 					cv.selectData=null
 				}
+			}
+			else if (display is PropertiesPanel	&&	mouse.currentCompent)
+			{
+				PropertiesPanel(display).clickdata=mouse.currentCompent;
 			}
 		}
 	}

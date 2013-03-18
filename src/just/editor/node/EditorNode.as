@@ -8,7 +8,7 @@ package just.editor.node
 	
 	public class EditorNode extends Node
 	{
-		public var item:EditItem；
+		public var item:EditItem;
 		public var state:UiState;
 		public function EditorNode()
 		{
